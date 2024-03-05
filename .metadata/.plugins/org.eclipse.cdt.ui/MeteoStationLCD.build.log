@@ -1,126 +1,38 @@
-17:17:00 **** Incremental Build of configuration Debug for project MeteoStationLCD ****
+19:21:14 **** Incremental Build of configuration Debug for project MeteoStationLCD ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L475xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:121:3: warning: implicit declaration of function 'LPS22_Init'; did you mean 'LPS22_init'? [-Wimplicit-function-declaration]
+../Core/Src/main.c:122:3: warning: implicit declaration of function 'LPS22_Init'; did you mean 'LPS22_init'? [-Wimplicit-function-declaration]
    LPS22_Init();
    ^~~~~~~~~~
    LPS22_init
-../Core/Src/main.c:163:6: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
-      sprintf(str, "Pres: %.1fhPA", press);
-      ^~~~~~~
-../Core/Src/main.c:163:6: warning: incompatible implicit declaration of built-in function 'sprintf'
-../Core/Src/main.c:163:6: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Core/Src/main.c:163:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-      sprintf(str, "Pres: %.1fhPA", press);
-              ^~~
-../Core/Src/main.c:163:14: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
-../Core/Src/main.c:165:16: warning: pointer targets in passing argument 1 of 'lcd_print' differ in signedness [-Wpointer-sign]
-      lcd_print(str);
-                ^~~
-In file included from ../Core/Src/main.c:26:0:
-../Core/Inc/hd44780.h:23:6: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
- void lcd_print(char string[]);
-      ^~~~~~~~~
-../Core/Src/main.c:167:14: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-      sprintf(str, "T:%.1fC H:%.1f\%%", ths.temp, ths.hum);
-              ^~~
-../Core/Src/main.c:167:14: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
-../Core/Src/main.c:169:16: warning: pointer targets in passing argument 1 of 'lcd_print' differ in signedness [-Wpointer-sign]
-      lcd_print(str);
-                ^~~
-In file included from ../Core/Src/main.c:26:0:
-../Core/Inc/hd44780.h:23:6: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
- void lcd_print(char string[]);
-      ^~~~~~~~~
-../Core/Src/main.c:175:5: warning: incompatible implicit declaration of built-in function 'sprintf'
-     sprintf(str, "Pres: %.1fhPA", press);
-     ^~~~~~~
-../Core/Src/main.c:175:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Core/Src/main.c:175:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-     sprintf(str, "Pres: %.1fhPA", press);
-             ^~~
-../Core/Src/main.c:175:13: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
-../Core/Src/main.c:177:15: warning: pointer targets in passing argument 1 of 'lcd_print' differ in signedness [-Wpointer-sign]
-     lcd_print(str);
-               ^~~
-In file included from ../Core/Src/main.c:26:0:
-../Core/Inc/hd44780.h:23:6: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
- void lcd_print(char string[]);
-      ^~~~~~~~~
-../Core/Src/main.c:179:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-     sprintf(str, "T:%.1fC H:%.1f\%%", ths.temp, ths.hum);
-             ^~~
-../Core/Src/main.c:179:13: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
-../Core/Src/main.c:181:15: warning: pointer targets in passing argument 1 of 'lcd_print' differ in signedness [-Wpointer-sign]
-     lcd_print(str);
-               ^~~
-In file included from ../Core/Src/main.c:26:0:
-../Core/Inc/hd44780.h:23:6: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
- void lcd_print(char string[]);
-      ^~~~~~~~~
-../Core/Src/main.c:187:5: warning: incompatible implicit declaration of built-in function 'sprintf'
-     sprintf(str, "Pres: %.1fhPA", press);
-     ^~~~~~~
-../Core/Src/main.c:187:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Core/Src/main.c:187:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-     sprintf(str, "Pres: %.1fhPA", press);
-             ^~~
-../Core/Src/main.c:187:13: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
-../Core/Src/main.c:189:15: warning: pointer targets in passing argument 1 of 'lcd_print' differ in signedness [-Wpointer-sign]
-     lcd_print(str);
-               ^~~
-In file included from ../Core/Src/main.c:26:0:
-../Core/Inc/hd44780.h:23:6: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
- void lcd_print(char string[]);
-      ^~~~~~~~~
-../Core/Src/main.c:191:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-     sprintf(str, "T:%.1fC H:%.1f\%%", ths.temp, ths.hum);
-             ^~~
-../Core/Src/main.c:191:13: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
-../Core/Src/main.c:193:15: warning: pointer targets in passing argument 1 of 'lcd_print' differ in signedness [-Wpointer-sign]
-     lcd_print(str);
-               ^~~
-In file included from ../Core/Src/main.c:26:0:
-../Core/Inc/hd44780.h:23:6: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
- void lcd_print(char string[]);
-      ^~~~~~~~~
-../Core/Src/main.c:199:5: warning: incompatible implicit declaration of built-in function 'sprintf'
-     sprintf(str, "Pres: %.1fhPA", press);
-     ^~~~~~~
-../Core/Src/main.c:199:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
-../Core/Src/main.c:199:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-     sprintf(str, "Pres: %.1fhPA", press);
-             ^~~
-../Core/Src/main.c:199:13: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
-../Core/Src/main.c:201:15: warning: pointer targets in passing argument 1 of 'lcd_print' differ in signedness [-Wpointer-sign]
-     lcd_print(str);
-               ^~~
-In file included from ../Core/Src/main.c:26:0:
-../Core/Inc/hd44780.h:23:6: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
- void lcd_print(char string[]);
-      ^~~~~~~~~
-../Core/Src/main.c:203:13: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
-     sprintf(str, "T:%.1fC H:%.1f\%%", ths.temp, ths.hum);
-             ^~~
-../Core/Src/main.c:203:13: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
-../Core/Src/main.c:205:15: warning: pointer targets in passing argument 1 of 'lcd_print' differ in signedness [-Wpointer-sign]
-     lcd_print(str);
-               ^~~
-In file included from ../Core/Src/main.c:26:0:
-../Core/Inc/hd44780.h:23:6: note: expected 'char *' but argument is of type 'uint8_t * {aka unsigned char *}'
- void lcd_print(char string[]);
-      ^~~~~~~~~
-../Core/Src/main.c:228:29: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
-  HAL_UART_Transmit(&huart1, "hola\n\r", 6, 1000);
-                             ^~~~~~~~~~
-In file included from ../Core/Inc/stm32l4xx_hal_conf.h:392:0,
-                 from ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:30,
-                 from ../Core/Inc/main.h:31,
-                 from ../Core/Src/main.c:22:
-../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:1609:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
- HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
-                   ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'display_sensor_data':
+../Core/Src/main.c:157:7: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+       sprintf(str, "Pres: %.1fhPA", press);
+       ^~~~~~~
+../Core/Src/main.c:157:7: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:157:7: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'display_max_values':
+../Core/Src/main.c:168:7: warning: incompatible implicit declaration of built-in function 'sprintf'
+       sprintf(str, "Pres: %.1fhPA", sensor_data.max_press);
+       ^~~~~~~
+../Core/Src/main.c:168:7: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'display_min_values':
+../Core/Src/main.c:179:7: warning: incompatible implicit declaration of built-in function 'sprintf'
+       sprintf(str, "Pres: %.1fhPA", sensor_data.min_press);
+       ^~~~~~~
+../Core/Src/main.c:179:7: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'display_avg_values':
+../Core/Src/main.c:194:7: warning: incompatible implicit declaration of built-in function 'sprintf'
+       sprintf(str, "Pres: %.1fhPA", avg_press);
+       ^~~~~~~
+../Core/Src/main.c:194:7: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:300:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("Pres: %.1fhPA T:%.1fC H:%.1f%% B: %d\r\n", press, ths.temp, ths.hum, getButton(sample));
+  ^~~~~~
+../Core/Src/main.c:300:2: warning: incompatible implicit declaration of built-in function 'printf'
+../Core/Src/main.c:300:2: note: include '<stdio.h>' or provide a declaration of 'printf'
 arm-none-eabi-gcc -o "MeteoStationLCD.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dimas\Desktop\ws_setr1\MeteoStationLCD\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MeteoStationLCD.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: MeteoStationLCD.elf
  
@@ -128,7 +40,7 @@ arm-none-eabi-objdump -h -S  MeteoStationLCD.elf  > "MeteoStationLCD.list"
 arm-none-eabi-objcopy  -O binary  MeteoStationLCD.elf  "MeteoStationLCD.bin"
 arm-none-eabi-size   MeteoStationLCD.elf 
    text	   data	    bss	    dec	    hex	filename
-  35616	    484	   1940	  38040	   9498	MeteoStationLCD.elf
+  39016	    484	   1940	  41440	   a1e0	MeteoStationLCD.elf
 Finished building: default.size.stdout
  
 Finished building: MeteoStationLCD.bin
@@ -136,5 +48,5 @@ Finished building: MeteoStationLCD.bin
 Finished building: MeteoStationLCD.list
  
 
-17:17:08 Build Finished. 0 errors, 23 warnings. (took 8s.27ms)
+19:21:17 Build Finished. 0 errors, 8 warnings. (took 2s.847ms)
 
