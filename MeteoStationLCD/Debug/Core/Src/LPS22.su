@@ -1,0 +1,2 @@
+LPS22.c:11:6:LPS22_Init	32	static
+LPS22.c:17:7:LPS22_ReadPress	40	static
