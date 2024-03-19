@@ -5120,3 +5120,129 @@ Finished building: PWM_Mot_Servo.bin
  
 Finished building: PWM_Mot_Servo.list
  
+08:58:00 **** Incremental Build of configuration Debug for project PWM_Mot_Servo ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L475xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "PWM_Mot_Servo.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dimas\Desktop\SETR12324\PWM_Mot_Servo\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM_Mot_Servo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PWM_Mot_Servo.elf
+ 
+arm-none-eabi-objdump -h -S  PWM_Mot_Servo.elf  > "PWM_Mot_Servo.list"
+arm-none-eabi-objcopy  -O binary  PWM_Mot_Servo.elf  "PWM_Mot_Servo.bin"
+arm-none-eabi-size   PWM_Mot_Servo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21404	     20	   1900	  23324	   5b1c	PWM_Mot_Servo.elf
+Finished building: default.size.stdout
+ 
+Finished building: PWM_Mot_Servo.bin
+ 
+Finished building: PWM_Mot_Servo.list
+ 
+08:58:10 **** Incremental Build of configuration Debug for project PWM_Mot_Servo ****
+make -j8 all 
+arm-none-eabi-size   PWM_Mot_Servo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21404	     20	   1900	  23324	   5b1c	PWM_Mot_Servo.elf
+Finished building: default.size.stdout
+ 
+09:10:23 **** Incremental Build of configuration Debug for project PWM_Mot_Servo ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L475xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "PWM_Mot_Servo.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dimas\Desktop\SETR12324\PWM_Mot_Servo\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM_Mot_Servo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PWM_Mot_Servo.elf
+ 
+arm-none-eabi-objdump -h -S  PWM_Mot_Servo.elf  > "PWM_Mot_Servo.list"
+arm-none-eabi-objcopy  -O binary  PWM_Mot_Servo.elf  "PWM_Mot_Servo.bin"
+arm-none-eabi-size   PWM_Mot_Servo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21416	     20	   1900	  23336	   5b28	PWM_Mot_Servo.elf
+Finished building: default.size.stdout
+ 
+Finished building: PWM_Mot_Servo.bin
+ 
+Finished building: PWM_Mot_Servo.list
+ 
+09:16:22 **** Incremental Build of configuration Debug for project PWM_Mot_Servo ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L475xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "PWM_Mot_Servo.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dimas\Desktop\SETR12324\PWM_Mot_Servo\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM_Mot_Servo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PWM_Mot_Servo.elf
+ 
+arm-none-eabi-objdump -h -S  PWM_Mot_Servo.elf  > "PWM_Mot_Servo.list"
+arm-none-eabi-objcopy  -O binary  PWM_Mot_Servo.elf  "PWM_Mot_Servo.bin"
+arm-none-eabi-size   PWM_Mot_Servo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21356	     20	   1900	  23276	   5aec	PWM_Mot_Servo.elf
+Finished building: default.size.stdout
+ 
+Finished building: PWM_Mot_Servo.bin
+ 
+Finished building: PWM_Mot_Servo.list
+ 
+09:29:05 **** Incremental Build of configuration Debug for project PWM_Mot_Servo ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L475xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "PWM_Mot_Servo.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dimas\Desktop\SETR12324\PWM_Mot_Servo\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM_Mot_Servo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PWM_Mot_Servo.elf
+ 
+arm-none-eabi-objdump -h -S  PWM_Mot_Servo.elf  > "PWM_Mot_Servo.list"
+arm-none-eabi-objcopy  -O binary  PWM_Mot_Servo.elf  "PWM_Mot_Servo.bin"
+arm-none-eabi-size   PWM_Mot_Servo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21224	     20	   1900	  23144	   5a68	PWM_Mot_Servo.elf
+Finished building: default.size.stdout
+ 
+Finished building: PWM_Mot_Servo.bin
+ 
+Finished building: PWM_Mot_Servo.list
+ 
+09:30:43 **** Incremental Build of configuration Debug for project PWM_Mot_Servo ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L475xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "PWM_Mot_Servo.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dimas\Desktop\SETR12324\PWM_Mot_Servo\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM_Mot_Servo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PWM_Mot_Servo.elf
+ 
+arm-none-eabi-objdump -h -S  PWM_Mot_Servo.elf  > "PWM_Mot_Servo.list"
+arm-none-eabi-objcopy  -O binary  PWM_Mot_Servo.elf  "PWM_Mot_Servo.bin"
+arm-none-eabi-size   PWM_Mot_Servo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21380	     20	   1900	  23300	   5b04	PWM_Mot_Servo.elf
+Finished building: default.size.stdout
+ 
+Finished building: PWM_Mot_Servo.bin
+ 
+Finished building: PWM_Mot_Servo.list
+ 
+09:31:30 **** Incremental Build of configuration Debug for project PWM_Mot_Servo ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L475xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "PWM_Mot_Servo.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dimas\Desktop\SETR12324\PWM_Mot_Servo\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM_Mot_Servo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PWM_Mot_Servo.elf
+ 
+arm-none-eabi-objdump -h -S  PWM_Mot_Servo.elf  > "PWM_Mot_Servo.list"
+arm-none-eabi-objcopy  -O binary  PWM_Mot_Servo.elf  "PWM_Mot_Servo.bin"
+arm-none-eabi-size   PWM_Mot_Servo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21380	     20	   1900	  23300	   5b04	PWM_Mot_Servo.elf
+Finished building: default.size.stdout
+ 
+Finished building: PWM_Mot_Servo.bin
+ 
+Finished building: PWM_Mot_Servo.list
+ 
+09:35:41 **** Incremental Build of configuration Debug for project PWM_Mot_Servo ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32L475xx -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "PWM_Mot_Servo.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\dimas\Desktop\SETR12324\PWM_Mot_Servo\STM32L475VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWM_Mot_Servo.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PWM_Mot_Servo.elf
+ 
+arm-none-eabi-objdump -h -S  PWM_Mot_Servo.elf  > "PWM_Mot_Servo.list"
+arm-none-eabi-objcopy  -O binary  PWM_Mot_Servo.elf  "PWM_Mot_Servo.bin"
+arm-none-eabi-size   PWM_Mot_Servo.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21436	     20	   1900	  23356	   5b3c	PWM_Mot_Servo.elf
+Finished building: default.size.stdout
+ 
+Finished building: PWM_Mot_Servo.bin
+ 
+Finished building: PWM_Mot_Servo.list
+ 

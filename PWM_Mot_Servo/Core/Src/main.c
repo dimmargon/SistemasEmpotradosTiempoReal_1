@@ -93,7 +93,7 @@ int16_t readAccel (uint8_t axxis){
 }
 
 void setServoPos(float ang){
-	float th = ((ang*200) / 18);
+	float th = ((ang*200) / 18) + 500;
 	__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, th);
 }
 
@@ -115,7 +115,6 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  initAccelerometer();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -135,6 +134,7 @@ int main(void)
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
+  initAccelerometer();
 
   /* USER CODE END 2 */
 
@@ -172,13 +172,13 @@ int main(void)
 		  HAL_Delay(200);
 	  }
 */
-	  uint8_t ejeY=1; //Eje Y = 1
-	  int16_t accelY = readAccel(ejeY);
+	  float ejeY=1; //Eje Y = 1
+	  float accelY = readAccel(ejeY);
 	  setMotorSpeed(4*accelY);
 
-	  uint8_t ejeX=0; //Eje X = 0
-	  int16_t accelX = readAccel(ejeX);
-	  setServoPos(180*accelX);
+	  float ejeX=0; //Eje X = 0
+	  float accelX = readAccel(ejeX)+1000;
+	  setServoPos(180*accelX/2000);
 	  HAL_Delay(10);
 /*
 	  uint16_t servo;
